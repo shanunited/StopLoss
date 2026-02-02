@@ -1,0 +1,15 @@
+{
+  "buy_calls_in_run": 106,
+  "error_message": "",
+  "last_buy_call_date": "2026-01-07",
+  "last_date_in_raw": "2026-01-30",
+  "last_updated": "2026-02-02T04:07:02.017224",
+  "logical_date": "2026-01-30T12:30:00+00:00",
+  "name": "BHEL",
+  "rows_added_in_run": 1,
+  "rows_total": 2475,
+  "run_id": "backfill__2026-01-30T12:30:00+00:00",
+  "status": "success",
+  "strategy_version": "buy_ma30_donch20_v1",
+  "ticker": "BHEL.NS"
+}

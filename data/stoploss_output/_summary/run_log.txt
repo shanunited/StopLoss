@@ -1,0 +1,130 @@
+2026-02-02 04:04:02,472 INFO Fusion Finance (FUSION.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:04,679 INFO SGS (SYRMA.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:06,183 INFO Reliance (RELIANCE.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:07,671 INFO Tatva Chintan (TATVA.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:09,014 INFO Zomato (ZOMATO.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:10,153 INFO Zomato (ZOMATO.NS): no new data returned for 2016-01-25 to 2026-01-22
+2026-02-02 04:04:10,165 INFO Gabriel (GABRIEL.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:11,627 INFO Narayan Rudra (NH.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:12,978 INFO Laurus Labs (LAURUSLABS.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:14,299 INFO BHEL (BHEL.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:15,804 INFO Bank of Maharashtra (MAHABANK.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:17,169 INFO Shriram Finance (SHRIRAMFIN.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:18,988 INFO Shriram Pistons (SHRIPISTON.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:20,803 INFO Nifty 50 Index (^NSEI): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:22,247 INFO Blue Jet Healthcare (BLUEJET.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:23,491 INFO Windlas Biotech (WINDLAS.NS): downloading 2016-01-25 to 2026-01-22 (inclusive)
+2026-02-02 04:04:38,111 INFO Fusion Finance (FUSION.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:39,723 INFO SGS (SYRMA.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:40,826 INFO Reliance (RELIANCE.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:42,012 INFO Tatva Chintan (TATVA.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:42,985 INFO Zomato (ZOMATO.NS): downloading 2016-01-26 to 2026-01-23 (inclusive)
+2026-02-02 04:04:44,183 INFO Zomato (ZOMATO.NS): no new data returned for 2016-01-26 to 2026-01-23
+2026-02-02 04:04:44,238 INFO Gabriel (GABRIEL.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:45,398 INFO Narayan Rudra (NH.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:46,484 INFO Laurus Labs (LAURUSLABS.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:47,653 INFO BHEL (BHEL.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:48,897 INFO Bank of Maharashtra (MAHABANK.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:49,997 INFO Shriram Finance (SHRIRAMFIN.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:51,187 INFO Shriram Pistons (SHRIPISTON.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:52,413 INFO Nifty 50 Index (^NSEI): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:53,883 INFO Blue Jet Healthcare (BLUEJET.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:04:54,891 INFO Windlas Biotech (WINDLAS.NS): downloading 2026-01-23 to 2026-01-23 (inclusive)
+2026-02-02 04:05:08,491 INFO Fusion Finance (FUSION.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:08,967 INFO Fusion Finance (FUSION.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:08,994 INFO SGS (SYRMA.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:09,136 INFO SGS (SYRMA.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:09,186 INFO Reliance (RELIANCE.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:09,488 INFO Reliance (RELIANCE.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:09,519 INFO Tatva Chintan (TATVA.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:09,650 INFO Tatva Chintan (TATVA.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:09,659 INFO Zomato (ZOMATO.NS): downloading 2016-01-29 to 2026-01-26 (inclusive)
+2026-02-02 04:05:10,716 INFO Zomato (ZOMATO.NS): no new data returned for 2016-01-29 to 2026-01-26
+2026-02-02 04:05:10,765 INFO Gabriel (GABRIEL.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:10,916 INFO Gabriel (GABRIEL.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:10,958 INFO Narayan Rudra (NH.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:11,100 INFO Narayan Rudra (NH.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:11,147 INFO Laurus Labs (LAURUSLABS.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:11,289 INFO Laurus Labs (LAURUSLABS.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:11,335 INFO BHEL (BHEL.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:11,494 INFO BHEL (BHEL.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:11,534 INFO Bank of Maharashtra (MAHABANK.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:11,693 INFO Bank of Maharashtra (MAHABANK.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:11,748 INFO Shriram Finance (SHRIRAMFIN.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:11,918 INFO Shriram Finance (SHRIRAMFIN.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:11,961 INFO Shriram Pistons (SHRIPISTON.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:12,234 INFO Shriram Pistons (SHRIPISTON.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:12,283 INFO Nifty 50 Index (^NSEI): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:12,402 INFO Nifty 50 Index (^NSEI): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:12,428 INFO Blue Jet Healthcare (BLUEJET.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:12,690 INFO Blue Jet Healthcare (BLUEJET.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:12,722 INFO Windlas Biotech (WINDLAS.NS): downloading 2026-01-24 to 2026-01-26 (inclusive)
+2026-02-02 04:05:13,006 INFO Windlas Biotech (WINDLAS.NS): no new data returned for 2026-01-24 to 2026-01-26
+2026-02-02 04:05:23,032 INFO Fusion Finance (FUSION.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:24,614 INFO SGS (SYRMA.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:25,651 INFO Reliance (RELIANCE.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:26,813 INFO Tatva Chintan (TATVA.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:27,871 INFO Zomato (ZOMATO.NS): downloading 2016-01-30 to 2026-01-27 (inclusive)
+2026-02-02 04:05:28,779 INFO Zomato (ZOMATO.NS): no new data returned for 2016-01-30 to 2026-01-27
+2026-02-02 04:05:28,835 INFO Gabriel (GABRIEL.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:29,914 INFO Narayan Rudra (NH.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:30,886 INFO Laurus Labs (LAURUSLABS.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:32,283 INFO BHEL (BHEL.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:33,340 INFO Bank of Maharashtra (MAHABANK.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:34,372 INFO Shriram Finance (SHRIRAMFIN.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:35,413 INFO Shriram Pistons (SHRIPISTON.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:36,440 INFO Nifty 50 Index (^NSEI): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:37,677 INFO Blue Jet Healthcare (BLUEJET.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:38,602 INFO Windlas Biotech (WINDLAS.NS): downloading 2026-01-24 to 2026-01-27 (inclusive)
+2026-02-02 04:05:53,010 INFO Fusion Finance (FUSION.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:05:54,755 INFO SGS (SYRMA.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:05:55,885 INFO Reliance (RELIANCE.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:05:56,912 INFO Tatva Chintan (TATVA.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:05:58,036 INFO Zomato (ZOMATO.NS): downloading 2016-01-31 to 2026-01-28 (inclusive)
+2026-02-02 04:06:00,235 INFO Zomato (ZOMATO.NS): no new data returned for 2016-01-31 to 2026-01-28
+2026-02-02 04:06:00,285 INFO Gabriel (GABRIEL.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:02,390 INFO Narayan Rudra (NH.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:03,518 INFO Laurus Labs (LAURUSLABS.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:04,984 INFO BHEL (BHEL.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:06,085 INFO Bank of Maharashtra (MAHABANK.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:07,223 INFO Shriram Finance (SHRIRAMFIN.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:08,417 INFO Shriram Pistons (SHRIPISTON.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:09,541 INFO Nifty 50 Index (^NSEI): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:11,141 INFO Blue Jet Healthcare (BLUEJET.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:12,269 INFO Windlas Biotech (WINDLAS.NS): downloading 2026-01-28 to 2026-01-28 (inclusive)
+2026-02-02 04:06:22,834 INFO Fusion Finance (FUSION.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:24,561 INFO SGS (SYRMA.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:25,720 INFO Reliance (RELIANCE.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:26,877 INFO Tatva Chintan (TATVA.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:28,102 INFO Zomato (ZOMATO.NS): downloading 2016-02-01 to 2026-01-29 (inclusive)
+2026-02-02 04:06:29,353 INFO Zomato (ZOMATO.NS): no new data returned for 2016-02-01 to 2026-01-29
+2026-02-02 04:06:29,402 INFO Gabriel (GABRIEL.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:31,492 INFO Narayan Rudra (NH.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:32,485 INFO Laurus Labs (LAURUSLABS.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:33,750 INFO BHEL (BHEL.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:34,967 INFO Bank of Maharashtra (MAHABANK.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:36,179 INFO Shriram Finance (SHRIRAMFIN.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:37,240 INFO Shriram Pistons (SHRIPISTON.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:38,377 INFO Nifty 50 Index (^NSEI): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:39,649 INFO Blue Jet Healthcare (BLUEJET.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:40,634 INFO Windlas Biotech (WINDLAS.NS): downloading 2026-01-29 to 2026-01-29 (inclusive)
+2026-02-02 04:06:52,906 INFO Fusion Finance (FUSION.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:06:53,880 INFO Fusion Finance (FUSION.NS): no new data returned for 2026-01-30 to 2026-01-30
+2026-02-02 04:06:53,918 INFO SGS (SYRMA.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:06:55,167 INFO Reliance (RELIANCE.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:06:56,291 INFO Tatva Chintan (TATVA.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:06:56,431 INFO Tatva Chintan (TATVA.NS): no new data returned for 2026-01-30 to 2026-01-30
+2026-02-02 04:06:56,441 INFO Zomato (ZOMATO.NS): downloading 2016-02-02 to 2026-01-30 (inclusive)
+2026-02-02 04:06:57,701 INFO Zomato (ZOMATO.NS): no new data returned for 2016-02-02 to 2026-01-30
+2026-02-02 04:06:57,745 INFO Gabriel (GABRIEL.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:06:58,896 INFO Narayan Rudra (NH.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:00,016 INFO Laurus Labs (LAURUSLABS.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:01,038 INFO BHEL (BHEL.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:02,060 INFO Bank of Maharashtra (MAHABANK.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:03,161 INFO Shriram Finance (SHRIRAMFIN.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:04,436 INFO Shriram Pistons (SHRIPISTON.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:04,801 INFO Shriram Pistons (SHRIPISTON.NS): no new data returned for 2026-01-30 to 2026-01-30
+2026-02-02 04:07:04,872 INFO Nifty 50 Index (^NSEI): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:06,038 INFO Blue Jet Healthcare (BLUEJET.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:07,054 INFO Windlas Biotech (WINDLAS.NS): downloading 2026-01-30 to 2026-01-30 (inclusive)
+2026-02-02 04:07:07,391 INFO Windlas Biotech (WINDLAS.NS): no new data returned for 2026-01-30 to 2026-01-30

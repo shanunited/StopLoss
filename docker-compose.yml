@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - airflow_postgres:/var/lib/postgresql/data
+
+  airflow:
+    image: apache/airflow:2.9.3-python3.11
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      STOPLOSS_REPO_PATH: /opt/airflow/stoploss_repo
+      STOPLOSS_OUTPUT_DIR: /opt/airflow/data/stoploss_output
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./:/opt/airflow/stoploss_repo
+      - ./data:/opt/airflow/data
+    depends_on:
+      - postgres
+    command: >
+      bash -c "until airflow db init; do
+                 echo 'Waiting for database...';
+                 sleep 5;
+               done;
+               pip install -r /opt/airflow/stoploss_repo/requirements.txt;
+               airflow db migrate;
+               airflow users create --username admin --password admin --firstname admin --lastname admin --role Admin --email admin@example.com || true;
+               airflow webserver & airflow scheduler"
+
+volumes:
+  airflow_postgres:

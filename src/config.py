@@ -65,11 +65,11 @@ def _merge_config(
     return result
 
 
-def load_config() -> Tuple[Dict[str, Any], List[str]]:
+def load_config(config_path: Path | None = None) -> Tuple[Dict[str, Any], List[str]]:
     """Load config.yaml if present, otherwise return defaults."""
     cfg = default_config()
     warnings: List[str] = []
-    yaml_path = get_project_root() / "config.yaml"
+    yaml_path = config_path or (get_project_root() / "config.yaml")
     if yaml_path.exists():
         try:
             import yaml  # type: ignore

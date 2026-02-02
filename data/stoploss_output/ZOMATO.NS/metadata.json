@@ -1,0 +1,15 @@
+{
+  "buy_calls_in_run": 0,
+  "error_message": "",
+  "last_buy_call_date": "",
+  "last_date_in_raw": "",
+  "last_updated": "2026-02-02T04:06:57.702243",
+  "logical_date": "2026-01-30T12:30:00+00:00",
+  "name": "Zomato",
+  "rows_added_in_run": 0,
+  "rows_total": 0,
+  "run_id": "backfill__2026-01-30T12:30:00+00:00",
+  "status": "no_new_data",
+  "strategy_version": "buy_ma30_donch20_v1",
+  "ticker": "ZOMATO.NS"
+}

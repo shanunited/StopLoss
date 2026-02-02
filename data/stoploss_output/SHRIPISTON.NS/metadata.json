@@ -1,0 +1,15 @@
+{
+  "buy_calls_in_run": 0,
+  "error_message": "",
+  "last_buy_call_date": "",
+  "last_date_in_raw": "2026-01-29",
+  "last_updated": "2026-02-02T04:07:04.803867",
+  "logical_date": "2026-01-30T12:30:00+00:00",
+  "name": "Shriram Pistons",
+  "rows_added_in_run": 0,
+  "rows_total": 2383,
+  "run_id": "backfill__2026-01-30T12:30:00+00:00",
+  "status": "no_new_data",
+  "strategy_version": "buy_ma30_donch20_v1",
+  "ticker": "SHRIPISTON.NS"
+}

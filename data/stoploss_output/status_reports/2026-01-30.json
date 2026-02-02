@@ -1,0 +1,96 @@
+{
+  "run_id": "backfill__2026-01-30T12:30:00+00:00",
+  "logical_date": "2026-01-30",
+  "status": {
+    "FUSION.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-01-29",
+      "error": ""
+    },
+    "SYRMA.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "RELIANCE.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "TATVA.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-01-29",
+      "error": ""
+    },
+    "ZOMATO.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "",
+      "error": ""
+    },
+    "GABRIEL.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "NH.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "LAURUSLABS.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "BHEL.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "MAHABANK.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "SHRIRAMFIN.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "SHRIPISTON.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-01-29",
+      "error": ""
+    },
+    "^NSEI": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "BLUEJET.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-01-30",
+      "error": ""
+    },
+    "WINDLAS.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-01-29",
+      "error": ""
+    }
+  }
+}
