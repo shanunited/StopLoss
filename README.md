@@ -66,6 +66,14 @@ All indicators are computed after rounding `Open/High/Low/Close` to 2 decimals.
   - `TR = max(High - Low, abs(High - prev_close), abs(Low - prev_close))`
   - `ATR14 = TR.ewm(alpha=1/14, adjust=False, min_periods=14).mean()`
 
+- RSI14 (Wilder):
+  - `delta = Close.diff()`
+  - `gain = delta.clip(lower=0)`
+  - `loss = (-delta).clip(lower=0)`
+  - `avg_gain = gain.ewm(alpha=1/14, adjust=False, min_periods=14).mean()`
+  - `avg_loss = loss.ewm(alpha=1/14, adjust=False, min_periods=14).mean()`
+  - `RSI14 = 100 - (100 / (1 + avg_gain/avg_loss))` (with divide-by-zero guards)
+
 All indicator outputs are rounded to 2 decimals in the saved CSVs.
 
 - StopLoss:
@@ -74,7 +82,8 @@ All indicator outputs are rounded to 2 decimals in the saved CSVs.
 - BuyCall (breakout + filter):
   - `donch_breakout = (Close[t] > DonchianHigh20_prev[t]) AND (Close[t-1] <= DonchianHigh20_prev[t-1])`
   - `ma_filter = Close[t] > MA30[t]`
-  - `BuyCall = donch_breakout AND ma_filter`
+  - `rsi_filter = RSI14[t] >= 60`
+  - `BuyCall = donch_breakout AND ma_filter AND rsi_filter`
   - `EntryPrice = Close when BuyCall is True`
   - `StopLoss_Entry = (0.935 * EntryPrice + (EntryPrice - 2 * ATR14) + DonchianLow15) / 3`
 
@@ -82,7 +91,7 @@ All indicator outputs are rounded to 2 decimals in the saved CSVs.
 
 For each instrument, you will find:
 - `raw_ohlc.json`: NDJSON raw OHLCV with OHLC rounded to 2 decimals
-- `final.csv`: Date, OHLCV, SMA150, MA30, DonchianLow15, DonchianHigh20, DonchianHigh20_prev, ATR14, StopLoss, BuyCall, EntryPrice, StopLoss_Entry
+- `final.csv`: Date, OHLCV, SMA150, MA30, DonchianLow15, DonchianHigh20, DonchianHigh20_prev, ATR14, RSI14, StopLoss, BuyCall, EntryPrice, StopLoss_Entry
 - `chart_last10y.png`: price panel + ATR panel
 - `metadata.json`: parameters, run IDs, and row counts
 

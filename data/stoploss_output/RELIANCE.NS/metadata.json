@@ -1,15 +1,17 @@
 {
-  "buy_calls_in_run": 129,
+  "buy_calls_in_run": 125,
   "error_message": "",
   "last_buy_call_date": "2025-11-26",
-  "last_date_in_raw": "2026-01-30",
-  "last_updated": "2026-02-02T04:06:56.265811",
-  "logical_date": "2026-01-30T12:30:00+00:00",
+  "last_date_in_raw": "2026-02-03",
+  "last_rsi_value_on_last_buy": 75.17,
+  "last_updated": "2026-02-04T05:32:51.223142",
+  "logical_date": "2026-02-03T12:30:00+00:00",
   "name": "Reliance",
   "rows_added_in_run": 1,
-  "rows_total": 2475,
-  "run_id": "backfill__2026-01-30T12:30:00+00:00",
+  "rows_total": 2477,
+  "run_id": "backfill__2026-02-03T12:30:00+00:00",
   "status": "success",
-  "strategy_version": "buy_ma30_donch20_v1",
-  "ticker": "RELIANCE.NS"
+  "strategy_version": "buy_ma30_donch20_rsi60_v1",
+  "ticker": "RELIANCE.NS",
+  "total_buy_calls_in_dataset": 125
 }

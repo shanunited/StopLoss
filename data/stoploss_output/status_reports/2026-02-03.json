@@ -1,0 +1,96 @@
+{
+  "run_id": "backfill__2026-02-03T12:30:00+00:00",
+  "logical_date": "2026-02-03",
+  "status": {
+    "FUSION.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "SYRMA.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "RELIANCE.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "TATVA.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "ZOMATO.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "",
+      "error": ""
+    },
+    "GABRIEL.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "NH.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "LAURUSLABS.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "BHEL.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "MAHABANK.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "SHRIRAMFIN.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "SHRIPISTON.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "^NSEI": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "[Errno 13] Permission denied: '/opt/airflow/data/stoploss_output/^NSEI/final.csv'"
+    },
+    "BLUEJET.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    },
+    "WINDLAS.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-03",
+      "error": ""
+    }
+  }
+}

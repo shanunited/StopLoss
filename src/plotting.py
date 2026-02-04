@@ -67,6 +67,19 @@ def plot_instrument(df: pd.DataFrame, output_path: Path, title: str) -> None:
                 label="StopLoss_Entry",
                 zorder=5,
             )
+        if "RSI14" in df.columns:
+            last_points = df.loc[buy_mask].tail(3)
+            for idx, row in last_points.iterrows():
+                rsi_val = row.get("RSI14")
+                if pd.notna(rsi_val):
+                    ax_price.text(
+                        idx,
+                        row.get("Close", 0) * 1.01,
+                        f"RSI {rsi_val:.1f}",
+                        fontsize=8,
+                        color="#444444",
+                        ha="center",
+                    )
 
     ax_price.set_title(title)
     ax_price.set_ylabel("Price")

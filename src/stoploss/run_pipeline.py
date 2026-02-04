@@ -17,6 +17,24 @@ from ..io_utils import ensure_dir, write_metadata
 from ..plotting import plot_instrument
 
 REQUIRED_COLUMNS = ["Open", "High", "Low", "Close", "Volume"]
+FINAL_COLUMNS = [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "SMA150",
+    "DonchianLow15",
+    "ATR14",
+    "RSI14",
+    "StopLoss",
+    "MA30",
+    "DonchianHigh20",
+    "DonchianHigh20_prev",
+    "BuyCall",
+    "EntryPrice",
+    "StopLoss_Entry",
+]
 
 
 def _setup_logger(log_path: Path) -> logging.Logger:
@@ -282,11 +300,15 @@ def run_pipeline(
                     "logical_date": logical_date,
                     "buy_calls_in_run": 0,
                     "last_buy_call_date": "",
-                    "strategy_version": "buy_ma30_donch20_v1",
+                    "last_rsi_value_on_last_buy": "",
+                    "total_buy_calls_in_dataset": 0,
+                    "strategy_version": "buy_ma30_donch20_rsi60_v1",
                     "status": "no_new_data",
                     "error_message": "",
                 }
                 write_metadata(metadata, instrument_dir / "metadata.json")
+                if existing_df is None and not final_path.exists():
+                    pd.DataFrame(columns=["Date"] + FINAL_COLUMNS).to_csv(final_path, index=False)
                 status_by_ticker[ticker] = status
                 continue
 
@@ -332,11 +354,15 @@ def run_pipeline(
                     "logical_date": logical_date,
                     "buy_calls_in_run": 0,
                     "last_buy_call_date": "",
-                    "strategy_version": "buy_ma30_donch20_v1",
+                    "last_rsi_value_on_last_buy": "",
+                    "total_buy_calls_in_dataset": 0,
+                    "strategy_version": "buy_ma30_donch20_rsi60_v1",
                     "status": "no_new_data",
                     "error_message": "",
                 }
                 write_metadata(metadata, instrument_dir / "metadata.json")
+                if existing_df is None and not final_path.exists():
+                    pd.DataFrame(columns=["Date"] + FINAL_COLUMNS).to_csv(final_path, index=False)
                 status_by_ticker[ticker] = status
                 continue
 
@@ -367,27 +393,11 @@ def run_pipeline(
 
             final_df = compute_indicators(combined)
 
-            final_columns = [
-                "Open",
-                "High",
-                "Low",
-                "Close",
-                "Volume",
-                "SMA150",
-                "DonchianLow15",
-                "ATR14",
-                "StopLoss",
-                "MA30",
-                "DonchianHigh20",
-                "DonchianHigh20_prev",
-                "BuyCall",
-                "EntryPrice",
-                "StopLoss_Entry",
-            ]
-            final_df = final_df[final_columns].copy()
+            final_df = final_df[FINAL_COLUMNS].copy()
             final_df["SMA150"] = final_df["SMA150"].round(2)
             final_df["DonchianLow15"] = final_df["DonchianLow15"].round(2)
             final_df["ATR14"] = final_df["ATR14"].round(2)
+            final_df["RSI14"] = final_df["RSI14"].round(2)
             final_df["StopLoss"] = final_df["StopLoss"].round(2)
             final_df["MA30"] = final_df["MA30"].round(2)
             final_df["DonchianHigh20"] = final_df["DonchianHigh20"].round(2)
@@ -417,10 +427,15 @@ def run_pipeline(
             )
 
             buy_calls = int(final_df["BuyCall"].sum())
+            total_buy_calls = buy_calls
             last_buy_date = ""
+            last_rsi_value = ""
             if buy_calls:
                 last_buy_date = (
                     final_df.loc[final_df["BuyCall"] == 1, "Date"].iloc[-1]
+                )
+                last_rsi_value = (
+                    final_df.loc[final_df["BuyCall"] == 1, "RSI14"].iloc[-1]
                 )
 
             metadata = {
@@ -434,7 +449,9 @@ def run_pipeline(
                 "logical_date": logical_date,
                 "buy_calls_in_run": buy_calls,
                 "last_buy_call_date": last_buy_date,
-                "strategy_version": "buy_ma30_donch20_v1",
+                "last_rsi_value_on_last_buy": last_rsi_value,
+                "total_buy_calls_in_dataset": total_buy_calls,
+                "strategy_version": "buy_ma30_donch20_rsi60_v1",
                 "status": "success",
                 "error_message": "",
             }
@@ -468,7 +485,9 @@ def run_pipeline(
                 "logical_date": logical_date,
                 "buy_calls_in_run": 0,
                 "last_buy_call_date": "",
-                "strategy_version": "buy_ma30_donch20_v1",
+                "last_rsi_value_on_last_buy": "",
+                "total_buy_calls_in_dataset": 0,
+                "strategy_version": "buy_ma30_donch20_rsi60_v1",
                 "status": "failed",
                 "error_message": str(exc),
             }
