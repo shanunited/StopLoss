@@ -1,0 +1,10 @@
+{
+  "ticker": "MAHABANK.NS",
+  "total_trades": 58,
+  "win_rate_pct": 37.93103448275862,
+  "avg_win_pct": 11.495972889474032,
+  "avg_loss_pct": -5.380891426325828,
+  "expectancy_pct": 1.0206777969086018,
+  "cumulative_return_pct": 31.841510019088215,
+  "max_drawdown_pct": -54.366073460861195
+}

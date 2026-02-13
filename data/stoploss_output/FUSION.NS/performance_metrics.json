@@ -1,0 +1,10 @@
+{
+  "ticker": "FUSION.NS",
+  "total_trades": 6,
+  "win_rate_pct": 33.33333333333333,
+  "avg_win_pct": 7.291251694775075,
+  "avg_loss_pct": -5.021919328606835,
+  "expectancy_pct": -0.9175289874795323,
+  "cumulative_return_pct": -6.491056511598758,
+  "max_drawdown_pct": -18.63118184947527
+}

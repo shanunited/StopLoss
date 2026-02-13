@@ -1,0 +1,2 @@
+Ticker,total_trades,win_rate_pct,cumulative_return_pct,max_drawdown_pct,expectancy_pct,buy_signals,trailing_violations,open_trade_at_end
+BHARTIARTL.NS,68,36.76470588235294,15.068142800192042,-57.63674378609947,0.5638613934807681,179,0,False

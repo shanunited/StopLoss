@@ -1,0 +1,22 @@
+{
+  "buy_signals": 203,
+  "trades_started": 74,
+  "trades_exited": 74,
+  "open_trade_at_end": false,
+  "any_nan_in_required_columns": [
+    "SMA150",
+    "MA30",
+    "DonchianLow15",
+    "DonchianHigh20",
+    "DonchianHigh20_prev",
+    "ATR14",
+    "RSI14",
+    "CandidateStop",
+    "StopLoss_Entry",
+    "TrailingStop"
+  ],
+  "any_exit_before_entry": false,
+  "any_trailing_stop_decreased": 0,
+  "any_exit_price_not_equal_prev_stop": 0,
+  "any_buycall_where_indicators_nan": 0
+}

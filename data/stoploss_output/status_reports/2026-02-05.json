@@ -1,0 +1,96 @@
+{
+  "run_id": "scheduled__2026-02-05T11:00:00+00:00",
+  "logical_date": "2026-02-05",
+  "status": {
+    "FUSION.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "SYRMA.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "RELIANCE.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "TATVA.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "ZOMATO.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "",
+      "error": ""
+    },
+    "GABRIEL.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "NH.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "LAURUSLABS.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "BHEL.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "MAHABANK.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "SHRIRAMFIN.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "SHRIPISTON.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "^NSEI": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    },
+    "BLUEJET.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": "[Errno 13] Permission denied: '/opt/airflow/data/stoploss_output/BLUEJET.NS/final.csv'"
+    },
+    "WINDLAS.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-05",
+      "error": ""
+    }
+  }
+}

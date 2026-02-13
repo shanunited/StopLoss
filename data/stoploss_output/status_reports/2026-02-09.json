@@ -1,0 +1,108 @@
+{
+  "run_id": "scheduled__2026-02-09T11:00:00+00:00",
+  "logical_date": "2026-02-09",
+  "status": {
+    "FUSION.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "SYRMA.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "RELIANCE.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "TATVA.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "ETERNAL.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "GABRIEL.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "NH.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "LAURUSLABS.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "BHEL.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "MAHABANK.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "SHRIRAMFIN.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "SHRIPISTON.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "^NSEI": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "BLUEJET.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "WINDLAS.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "2026-02-10",
+      "error": ""
+    },
+    "NIFTYMIDSML400.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "",
+      "error": ""
+    },
+    "^CNXSC": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "",
+      "error": ""
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "ticker": "NSE_BANK",
+  "total_trades": 53,
+  "win_rate_pct": 47.16981132075472,
+  "avg_win_pct": 9.356520819723315,
+  "avg_loss_pct": -2.081036168969618,
+  "expectancy_pct": 3.314037882300634,
+  "cumulative_return_pct": 369.71554288862853,
+  "max_drawdown_pct": -10.646447983889212
+}

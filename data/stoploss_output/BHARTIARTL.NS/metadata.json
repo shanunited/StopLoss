@@ -1,0 +1,21 @@
+{
+  "buy_calls_in_run": 179,
+  "error_message": "",
+  "last_buy_call_date": "2025-11-18",
+  "last_date_in_raw": "2026-02-13",
+  "last_rsi_value_on_last_buy": 66.76,
+  "last_trade_entry_date": "2025-10-17",
+  "last_trade_exit_date": "2026-01-09",
+  "last_trade_pnl_pct": 1.49,
+  "last_updated": "2026-02-13T10:07:51.516227",
+  "logical_date": "2026-02-13",
+  "name": "Bharti Airtel",
+  "rows_added_in_run": 4964,
+  "rows_total": 4964,
+  "run_id": null,
+  "status": "success",
+  "strategy_version": "buy_ma30_donch20_rsi60_trailing_v1",
+  "ticker": "BHARTIARTL.NS",
+  "total_buy_calls_in_dataset": 179,
+  "total_trades": 68
+}

@@ -1,0 +1,21 @@
+{
+  "buy_calls_in_run": 155,
+  "error_message": "",
+  "last_buy_call_date": "2026-02-04",
+  "last_date_in_raw": "2026-02-13",
+  "last_rsi_value_on_last_buy": 68.42,
+  "last_trade_entry_date": "2026-01-01",
+  "last_trade_exit_date": "2025-10-31",
+  "last_trade_pnl_pct": -2.7,
+  "last_updated": "2026-02-13T10:07:46.761295",
+  "logical_date": "2026-02-13",
+  "name": "NTPC",
+  "rows_added_in_run": 4964,
+  "rows_total": 4964,
+  "run_id": null,
+  "status": "success",
+  "strategy_version": "buy_ma30_donch20_rsi60_trailing_v1",
+  "ticker": "NTPC.NS",
+  "total_buy_calls_in_dataset": 155,
+  "total_trades": 76
+}

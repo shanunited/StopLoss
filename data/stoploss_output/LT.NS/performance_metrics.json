@@ -1,0 +1,10 @@
+{
+  "ticker": "LT.NS",
+  "total_trades": 68,
+  "win_rate_pct": 44.11764705882353,
+  "avg_win_pct": 10.306532983932847,
+  "avg_loss_pct": -3.456512136152178,
+  "expectancy_pct": 2.615419534473568,
+  "cumulative_return_pct": 320.62463801352754,
+  "max_drawdown_pct": -29.572324587313766
+}

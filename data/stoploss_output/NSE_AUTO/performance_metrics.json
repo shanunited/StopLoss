@@ -1,0 +1,10 @@
+{
+  "ticker": "NSE_AUTO",
+  "total_trades": 45,
+  "win_rate_pct": 42.22222222222222,
+  "avg_win_pct": 9.10594108567464,
+  "avg_loss_pct": -2.081058519808483,
+  "expectancy_pct": 2.6423413136177247,
+  "cumulative_return_pct": 185.3963484971552,
+  "max_drawdown_pct": -13.10782826458291
+}

@@ -139,37 +139,37 @@ def _trade_engine(df: pd.DataFrame) -> Tuple[pd.DataFrame, List[Dict[str, Any]],
                 else:
                     exit_price[i] = sma150
                     exit_reason[i] = "SMA150_BREAK"
-                    in_position[i] = 1
-                    trade_id[i] = current_trade_id
-                    entry_date[i] = entry_dt
-                    trailing_stop[i] = current_stop
-                    if entry_idx is not None and entry_px is not None:
-                        holding_days[i] = i - entry_idx + 1
-                        pnl_pct[i] = (exit_price[i] - entry_px) / entry_px * 100
-                    if entry_idx is not None and entry_dt is not None:
-                        trades.append(
-                            {
-                                "TradeId": current_trade_id,
-                                "EntryDate": entry_dt,
-                                "EntryPrice": entry_px,
-                                "InitialStop": trailing_stop[entry_idx],
-                                "ExitDate": idx,
-                                "ExitPrice": exit_price[i],
-                                "ExitReason": exit_reason[i],
-                                "HoldingDays": holding_days[i],
-                                "PnL_pct": pnl_pct[i],
-                                "MaxFavorablePct": max_fav,
-                                "MaxAdversePct": max_adv,
-                            }
-                        )
-                    in_pos = False
-                    entry_idx = None
-                    entry_px = None
-                    entry_dt = None
-                    current_stop = None
-                    max_fav = None
-                    max_adv = None
-                    continue
+                in_position[i] = 1
+                trade_id[i] = current_trade_id
+                entry_date[i] = entry_dt
+                trailing_stop[i] = current_stop
+                if entry_idx is not None and entry_px is not None:
+                    holding_days[i] = i - entry_idx + 1
+                    pnl_pct[i] = (exit_price[i] - entry_px) / entry_px * 100
+                if entry_idx is not None and entry_dt is not None:
+                    trades.append(
+                        {
+                            "TradeId": current_trade_id,
+                            "EntryDate": entry_dt,
+                            "EntryPrice": entry_px,
+                            "InitialStop": trailing_stop[entry_idx],
+                            "ExitDate": idx,
+                            "ExitPrice": exit_price[i],
+                            "ExitReason": exit_reason[i],
+                            "HoldingDays": holding_days[i],
+                            "PnL_pct": pnl_pct[i],
+                            "MaxFavorablePct": max_fav,
+                            "MaxAdversePct": max_adv,
+                        }
+                    )
+                in_pos = False
+                entry_idx = None
+                entry_px = None
+                entry_dt = None
+                current_stop = None
+                max_fav = None
+                max_adv = None
+                continue
 
             # update trailing stop after exit check
             new_stop = current_stop

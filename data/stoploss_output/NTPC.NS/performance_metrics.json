@@ -1,0 +1,10 @@
+{
+  "ticker": "NTPC.NS",
+  "total_trades": 75,
+  "win_rate_pct": 28.000000000000004,
+  "avg_win_pct": 6.109109132447204,
+  "avg_loss_pct": -3.0201822523613617,
+  "expectancy_pct": -0.4639806646149631,
+  "cumulative_return_pct": -36.717311811816536,
+  "max_drawdown_pct": -61.94801565654732
+}

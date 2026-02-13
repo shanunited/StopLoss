@@ -1,0 +1,10 @@
+{
+  "ticker": "NSE_METAL",
+  "total_trades": 46,
+  "win_rate_pct": 45.65217391304348,
+  "avg_win_pct": 7.542905489270898,
+  "avg_loss_pct": -2.8513876594109053,
+  "expectancy_pct": 1.8938331258568741,
+  "cumulative_return_pct": 113.79005156671438,
+  "max_drawdown_pct": -18.828929980480844
+}

@@ -1,0 +1,108 @@
+{
+  "run_id": "manual__2026-02-13T06:45:26+00:00",
+  "logical_date": "2026-02-13",
+  "status": {
+    "FUSION.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "SYRMA.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "RELIANCE.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "TATVA.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "ETERNAL.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "GABRIEL.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "NH.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "LAURUSLABS.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "BHEL.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "MAHABANK.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "SHRIRAMFIN.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "SHRIPISTON.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "^NSEI": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "BLUEJET.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "WINDLAS.NS": {
+      "status": "success",
+      "rows_added": 2,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "NIFTYMIDSML400.NS": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-13",
+      "error": ""
+    },
+    "^CNXSC": {
+      "status": "success",
+      "rows_added": 1,
+      "last_date": "2026-02-13",
+      "error": ""
+    }
+  }
+}

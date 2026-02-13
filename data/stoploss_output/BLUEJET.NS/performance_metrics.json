@@ -1,0 +1,10 @@
+{
+  "ticker": "BLUEJET.NS",
+  "total_trades": 5,
+  "win_rate_pct": 60.0,
+  "avg_win_pct": 15.684796133250805,
+  "avg_loss_pct": -9.662410656677634,
+  "expectancy_pct": 5.545913417279429,
+  "cumulative_return_pct": 24.454737986274957,
+  "max_drawdown_pct": -10.757249487978694
+}

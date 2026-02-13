@@ -1,0 +1,10 @@
+{
+  "ticker": "ITC.NS",
+  "total_trades": 70,
+  "win_rate_pct": 31.428571428571427,
+  "avg_win_pct": 7.521721296322728,
+  "avg_loss_pct": -3.1117361578066607,
+  "expectancy_pct": 0.23020761349114682,
+  "cumulative_return_pct": 4.090092874456341,
+  "max_drawdown_pct": -34.18584785586789
+}

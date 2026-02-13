@@ -1,0 +1,10 @@
+{
+  "ticker": "WINDLAS.NS",
+  "total_trades": 15,
+  "win_rate_pct": 26.666666666666668,
+  "avg_win_pct": 9.891278439780454,
+  "avg_loss_pct": -5.635000859196605,
+  "expectancy_pct": -1.4946597128027235,
+  "cumulative_return_pct": -24.139958352209,
+  "max_drawdown_pct": -30.375948081696936
+}

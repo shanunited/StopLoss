@@ -1,0 +1,10 @@
+{
+  "ticker": "GABRIEL.NS",
+  "total_trades": 66,
+  "win_rate_pct": 31.818181818181817,
+  "avg_win_pct": 22.98776981971471,
+  "avg_loss_pct": -5.976681998739393,
+  "expectancy_pct": 3.239279943496003,
+  "cumulative_return_pct": 253.59524808284885,
+  "max_drawdown_pct": -57.465040648570664
+}

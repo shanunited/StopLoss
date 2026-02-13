@@ -1,0 +1,10 @@
+{
+  "ticker": "ICICIBANK.NS",
+  "total_trades": 74,
+  "win_rate_pct": 33.78378378378378,
+  "avg_win_pct": 9.687304207972655,
+  "avg_loss_pct": -3.764953055355233,
+  "expectancy_pct": 0.7797284525258101,
+  "cumulative_return_pct": 32.27747526671902,
+  "max_drawdown_pct": -39.46892649297473
+}

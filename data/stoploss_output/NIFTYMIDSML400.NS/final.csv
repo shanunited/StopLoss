@@ -1,0 +1,2 @@
+Date,Open,High,Low,Close,Volume,SMA150,DonchianLow15,ATR14,RSI14,StopLoss,MA30,DonchianHigh20,DonchianHigh20_prev,BuyCall,EntryPrice,StopLoss_Entry,CandidateStop,TrailingStop,InPosition,EntryDate,ExitSignal,ExitPrice,ExitReason,TradeId,HoldingDays,PnL_pct
+2026-02-13,19867.0,19867.1,19602.6,19724.3,0,,,,,,,,,0,,,,,0,,0,,,,,

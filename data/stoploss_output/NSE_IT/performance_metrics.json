@@ -1,0 +1,10 @@
+{
+  "ticker": "NSE_IT",
+  "total_trades": 57,
+  "win_rate_pct": 35.08771929824561,
+  "avg_win_pct": 14.710665105071365,
+  "avg_loss_pct": -1.8664783812589503,
+  "expectancy_pct": 3.950063192892037,
+  "cumulative_return_pct": 563.9979039239569,
+  "max_drawdown_pct": -15.312670882190227
+}

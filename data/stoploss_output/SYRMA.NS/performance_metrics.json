@@ -1,0 +1,10 @@
+{
+  "ticker": "SYRMA.NS",
+  "total_trades": 11,
+  "win_rate_pct": 54.54545454545454,
+  "avg_win_pct": 16.378233503702845,
+  "avg_loss_pct": -4.867337547234834,
+  "expectancy_pct": 6.7211557532766255,
+  "cumulative_return_pct": 79.3236665759809,
+  "max_drawdown_pct": -10.314509824903189
+}

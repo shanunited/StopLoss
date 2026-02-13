@@ -1,0 +1,21 @@
+{
+  "buy_calls_in_run": 0,
+  "error_message": "",
+  "last_buy_call_date": "",
+  "last_date_in_raw": "2026-02-13",
+  "last_rsi_value_on_last_buy": "",
+  "last_trade_entry_date": "",
+  "last_trade_exit_date": "",
+  "last_trade_pnl_pct": "",
+  "last_updated": "2026-02-13T11:07:55.655845",
+  "logical_date": "2026-02-12T11:00:00+00:00",
+  "name": "Nifty MidSmall 400",
+  "rows_added_in_run": 0,
+  "rows_total": 1,
+  "run_id": "scheduled__2026-02-12T11:00:00+00:00",
+  "status": "no_new_data",
+  "strategy_version": "buy_ma30_donch20_rsi60_trailing_v1",
+  "ticker": "NIFTYMIDSML400.NS",
+  "total_buy_calls_in_dataset": 0,
+  "total_trades": 0
+}

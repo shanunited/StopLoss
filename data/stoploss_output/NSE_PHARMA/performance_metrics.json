@@ -1,0 +1,10 @@
+{
+  "ticker": "NSE_PHARMA",
+  "total_trades": 43,
+  "win_rate_pct": 34.883720930232556,
+  "avg_win_pct": 11.37861603011921,
+  "avg_loss_pct": -2.362286073612697,
+  "expectancy_pct": 2.431051869549596,
+  "cumulative_return_pct": 144.2580932075537,
+  "max_drawdown_pct": -22.80778365837827
+}

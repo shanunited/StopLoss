@@ -1,0 +1,21 @@
+{
+  "buy_calls_in_run": 194,
+  "error_message": "",
+  "last_buy_call_date": "2025-08-01",
+  "last_date_in_raw": "2026-02-13",
+  "last_rsi_value_on_last_buy": 67.89,
+  "last_trade_entry_date": "2025-07-07",
+  "last_trade_exit_date": "2025-09-23",
+  "last_trade_pnl_pct": 5.09,
+  "last_updated": "2026-02-13T10:07:45.055970",
+  "logical_date": "2026-02-13",
+  "name": "Hindustan Unilever",
+  "rows_added_in_run": 4964,
+  "rows_total": 4964,
+  "run_id": null,
+  "status": "success",
+  "strategy_version": "buy_ma30_donch20_rsi60_trailing_v1",
+  "ticker": "HINDUNILVR.NS",
+  "total_buy_calls_in_dataset": 194,
+  "total_trades": 63
+}

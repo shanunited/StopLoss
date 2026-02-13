@@ -1,0 +1,10 @@
+{
+  "ticker": "ETERNAL.NS",
+  "total_trades": 13,
+  "win_rate_pct": 53.84615384615385,
+  "avg_win_pct": 17.53219273256808,
+  "avg_loss_pct": -5.056090470717174,
+  "expectancy_pct": 7.106831254128732,
+  "cumulative_return_pct": 101.63371899662027,
+  "max_drawdown_pct": -10.226531415536913
+}

@@ -1,0 +1,10 @@
+{
+  "ticker": "NSE_FMCG",
+  "total_trades": 45,
+  "win_rate_pct": 42.22222222222222,
+  "avg_win_pct": 8.005875615290703,
+  "avg_loss_pct": -2.1422128680271073,
+  "expectancy_pct": 2.1425356027070794,
+  "cumulative_return_pct": 139.4927159375276,
+  "max_drawdown_pct": -14.7525744536498
+}

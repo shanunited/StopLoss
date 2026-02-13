@@ -1,0 +1,10 @@
+{
+  "ticker": "TATVA.NS",
+  "total_trades": 5,
+  "win_rate_pct": 40.0,
+  "avg_win_pct": 6.454014301721146,
+  "avg_loss_pct": -5.7906865183918335,
+  "expectancy_pct": -0.8928061903466418,
+  "cumulative_return_pct": -5.602065593507765,
+  "max_drawdown_pct": -11.794735556660337
+}

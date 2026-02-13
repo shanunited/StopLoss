@@ -1,0 +1,96 @@
+{
+  "run_id": "backfill__2026-02-06T11:00:00+00:00",
+  "logical_date": "2026-02-06",
+  "status": {
+    "FUSION.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "SYRMA.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "RELIANCE.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "TATVA.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "ZOMATO.NS": {
+      "status": "no_new_data",
+      "rows_added": 0,
+      "last_date": "",
+      "error": ""
+    },
+    "GABRIEL.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "NH.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "LAURUSLABS.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "BHEL.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "MAHABANK.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "SHRIRAMFIN.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "SHRIPISTON.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "^NSEI": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    },
+    "BLUEJET.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "[Errno 13] Permission denied: '/opt/airflow/data/stoploss_output/BLUEJET.NS/final.csv'"
+    },
+    "WINDLAS.NS": {
+      "status": "failed",
+      "rows_added": 0,
+      "last_date": "",
+      "error": "'bool' object has no attribute 'any'"
+    }
+  }
+}

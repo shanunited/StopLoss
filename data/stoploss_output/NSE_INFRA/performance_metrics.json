@@ -1,0 +1,10 @@
+{
+  "ticker": "NSE_INFRA",
+  "total_trades": 53,
+  "win_rate_pct": 26.41509433962264,
+  "avg_win_pct": 7.466279305301481,
+  "avg_loss_pct": -1.819556868588278,
+  "expectancy_pct": 0.6333055169675073,
+  "cumulative_return_pct": 28.944148506480218,
+  "max_drawdown_pct": -18.019933142673636
+}

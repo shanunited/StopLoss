@@ -1,0 +1,10 @@
+{
+  "ticker": "^NSEI",
+  "total_trades": 60,
+  "win_rate_pct": 45.0,
+  "avg_win_pct": 5.6885288490637045,
+  "avg_loss_pct": -1.8769132833870008,
+  "expectancy_pct": 1.5275356762158168,
+  "cumulative_return_pct": 125.5801025128755,
+  "max_drawdown_pct": -25.315718936057557
+}
