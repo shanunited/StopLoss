@@ -70,7 +70,7 @@ def _parse_instruments_var(raw: str) -> list[dict]:
 
 
 @dag(
-    schedule="0 18 * * 1-5",
+    schedule="30 16 * * 1-5",
     start_date=pendulum.datetime(2026, 1, 22, tz="Asia/Kolkata"),
     catchup=True,
     max_active_runs=1,

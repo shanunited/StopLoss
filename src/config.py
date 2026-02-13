@@ -8,7 +8,7 @@ DEFAULT_INSTRUMENTS = [
     {"name": "SGS", "ticker": "SYRMA.NS"},
     {"name": "Reliance", "ticker": "RELIANCE.NS"},
     {"name": "Tatva Chintan", "ticker": "TATVA.NS"},
-    {"name": "Zomato", "ticker": "ZOMATO.NS"},
+    {"name": "Zomato (Eternal)", "ticker": "ETERNAL.NS"},
     {"name": "Gabriel", "ticker": "GABRIEL.NS"},
     {"name": "Narayan Rudra", "ticker": "NH.NS"},
     {"name": "Laurus Labs", "ticker": "LAURUSLABS.NS"},
@@ -19,6 +19,18 @@ DEFAULT_INSTRUMENTS = [
     {"name": "Nifty 50 Index", "ticker": "^NSEI"},
     {"name": "Blue Jet Healthcare", "ticker": "BLUEJET.NS"},
     {"name": "Windlas Biotech", "ticker": "WINDLAS.NS"},
+    {"name": "Nifty MidSmall 400", "ticker": "NIFTYMIDSML400.NS"},
+    {"name": "Nifty Smallcap 100", "ticker": "^CNXSC"},
+    {"name": "ITC", "ticker": "ITC.NS"},
+    {"name": "State Bank of India", "ticker": "SBIN.NS"},
+    {"name": "ICICI Bank", "ticker": "ICICIBANK.NS"},
+    {"name": "Larsen & Toubro", "ticker": "LT.NS"},
+    {"name": "TMCV", "ticker": "TMCV.NS"},
+    {"name": "Hindustan Unilever", "ticker": "HINDUNILVR.NS"},
+    {"name": "NTPC", "ticker": "NTPC.NS"},
+    {"name": "ONGC", "ticker": "ONGC.NS"},
+    {"name": "Axis Bank", "ticker": "AXISBANK.NS"},
+    {"name": "Bharti Airtel", "ticker": "BHARTIARTL.NS"},
 ]
 
 
@@ -34,6 +46,7 @@ def default_config() -> Dict[str, Any]:
         "output_dir": "output",
         "start": None,
         "end": None,
+        "full_backfill_from": None,
     }
 
 
@@ -41,7 +54,7 @@ def _merge_config(
     base: Dict[str, Any], override: Dict[str, Any], warnings: List[str]
 ) -> Dict[str, Any]:
     result = dict(base)
-    for key in ["output_dir", "start", "end"]:
+    for key in ["output_dir", "start", "end", "full_backfill_from"]:
         if key in override and override[key] is not None:
             result[key] = override[key]
 

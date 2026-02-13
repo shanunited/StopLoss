@@ -3,8 +3,11 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional
 
-import matplotlib.pyplot as plt
+import matplotlib
 import pandas as pd
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 
 
 def _plot_series(
@@ -43,9 +46,13 @@ def plot_instrument(df: pd.DataFrame, output_path: Path, title: str) -> None:
         "#2ca02c",
         linewidth=0.9,
     )
+    _plot_series(ax_price, df.get("TrailingStop"), "Trailing Stop", "#8c564b", linewidth=1.0)
 
-    buy_mask = df.get("BuyCall") == 1
-    if buy_mask is not None and buy_mask.any():
+    buy_series = df.get("BuyCall")
+    buy_mask = None
+    if isinstance(buy_series, pd.Series):
+        buy_mask = buy_series == 1
+    if buy_mask is not None and not buy_mask.empty and buy_mask.any():
         buy_dates = df.index[buy_mask]
         buy_prices = df.loc[buy_mask, "Close"]
         ax_price.scatter(
@@ -81,13 +88,28 @@ def plot_instrument(df: pd.DataFrame, output_path: Path, title: str) -> None:
                         ha="center",
                     )
 
+    exit_series = df.get("ExitSignal")
+    exit_mask = None
+    if isinstance(exit_series, pd.Series):
+        exit_mask = exit_series == 1
+    if exit_mask is not None and not exit_mask.empty and exit_mask.any():
+        ax_price.scatter(
+            df.index[exit_mask],
+            df.loc[exit_mask, "ExitPrice"],
+            marker="x",
+            color="#d62728",
+            s=40,
+            label="Exit",
+            zorder=6,
+        )
+
     ax_price.set_title(title)
     ax_price.set_ylabel("Price")
     ax_price.grid(True, alpha=0.3)
     ax_price.legend(loc="upper left")
 
     _plot_series(ax_atr, df.get("ATR14"), "ATR14", "#9467bd", linewidth=1.0)
-    if buy_mask is not None and buy_mask.any():
+    if buy_mask is not None and not buy_mask.empty and buy_mask.any():
         ax_atr.scatter(
             df.index[buy_mask],
             df.loc[buy_mask, "ATR14"],

@@ -19,6 +19,32 @@ Both scripts:
 - Install dependencies from `requirements.txt`
 - Run `python -m src.main`
 
+## Full backfill (extend history to 2006-01-01)
+
+Run a one-time rebuild of raw_ohlc.json and all downstream outputs from 2006-01-01 through today.
+
+```
+python -m src.main --full-backfill-from 2006-01-01
+```
+
+You can also set this in `config.yaml`:
+```
+full_backfill_from: "2006-01-01"
+```
+
+For sector indices (separate pipeline):
+```
+python -m src.sector_pipeline --full-backfill-from 2006-01-01
+```
+
+After the backfill, run normally (without the flag) so incremental updates continue as usual.
+
+## Additional NSE tickers (added)
+
+These tickers are now part of the default universe and will be backfilled from 2006-01-01 (or earliest available):
+ITC.NS, SBIN.NS, ICICIBANK.NS, LT.NS, TMCV.NS, HINDUNILVR.NS, NTPC.NS, ONGC.NS,
+AXISBANK.NS, BHARTIARTL.NS.
+
 ## Folder structure
 ```
 project_root/
@@ -43,6 +69,33 @@ project_root/
 ```
 
 Per-instrument folders are named by ticker symbol (e.g., `RELIANCE.NS`).
+
+Default instruments include NIFTYMIDSML400.NS and ^CNXSC. These two indices are configured to start from 2015-01-01 when no earlier data is present.
+
+## Manual inputs for indices
+
+If you already have historical daily data for specific indices, place CSV files here:
+```
+data/manual_inputs/
+  NIFTYMIDSML400.NS.csv
+  CNXSC.csv
+```
+You can also place Investing.com-style exports here:
+```
+data/stoploss_output/Manual Data/
+  Nifty Midcap 150 Historical Data.csv
+  NIFTY Smallcap 100 Historical Data.csv
+```
+
+Input schema (CSV):
+- Columns: `Date,Open,High,Low,Close,Volume`
+- Investing.com format also supported: `Date,Price,Open,High,Low,Vol.,Change %`
+- Date format: `YYYY-MM-DD` recommended
+- Values should already be adjusted (we previously used `auto_adjust=True` in yfinance)
+- OHLC is rounded to 2 decimals immediately after loading
+
+When these files exist, the pipeline uses them instead of Yahoo Finance for those tickers and still produces:
+`raw_ohlc.json`, `final.csv`, `metadata.json`, `chart_last10y.png`, `trades_summary.csv`, `performance_metrics.json`, `equity_curve.png`, and audit files.
 
 ## Indicator formulas (daily)
 
@@ -91,7 +144,7 @@ All indicator outputs are rounded to 2 decimals in the saved CSVs.
 
 For each instrument, you will find:
 - `raw_ohlc.json`: NDJSON raw OHLCV with OHLC rounded to 2 decimals
-- `final.csv`: Date, OHLCV, SMA150, MA30, DonchianLow15, DonchianHigh20, DonchianHigh20_prev, ATR14, RSI14, StopLoss, BuyCall, EntryPrice, StopLoss_Entry
+- `final.csv`: Date, OHLCV, SMA150, MA30, DonchianLow15, DonchianHigh20, DonchianHigh20_prev, ATR14, RSI14, StopLoss, BuyCall, EntryPrice, StopLoss_Entry, CandidateStop, TrailingStop, InPosition, EntryDate, ExitSignal, ExitPrice, TradeId, HoldingDays, PnL_pct
 - `chart_last10y.png`: price panel + ATR panel
 - `metadata.json`: parameters, run IDs, and row counts
 
@@ -121,6 +174,71 @@ instruments:
 
 - The data is downloaded with `auto_adjust=True` and daily interval to avoid false signals from corporate actions.
 - Missing OHLC rows are dropped prior to indicator calculation; check `metadata.json` for dropped row counts.
+
+## Holding & Exit Logic
+
+- CandidateStop (daily):
+  - `CandidateStop = (0.935 * Close + (Close - 2 * ATR14) + DonchianLow15) / 3`
+- TrailingStop:
+  - Initialize on entry day: `TrailingStop = StopLoss_Entry`
+  - While in position: `TrailingStop[t] = max(TrailingStop[t-1], CandidateStop[t])`
+- ExitSignal:
+  - `ExitSignal[t] = 1 if Low[t] <= TrailingStop[t-1]` (only when in position at start of day)
+  - `ExitPrice = TrailingStop[t-1]`
+  - After exit, position resets until next BuyCall.
+
+## Per-ticker performance
+
+Generate trade summaries and performance metrics from completed trades:
+```
+python -m src.performance --output-dir output
+```
+
+Outputs per ticker:
+- `trades_summary.csv`: completed trades with Entry/Exit/PnL fields
+- `performance_metrics.json`: win rate, expectancy, cumulative return, max drawdown
+- `equity_curve.png`: per-trade equity curve
+
+Summary index:
+- `output/_summary/metrics_by_ticker.csv`
+- `output/_summary/metrics_by_ticker.xlsx` (sheet `summary` + sheet `metrics_json`)
+
+## Audit Recompute & Validation
+
+Rebuild everything from raw data and produce audit artifacts:
+```
+python -m src.audit_recompute --output-dir output --tickers ALL
+```
+Or a single ticker:
+```
+python -m src.audit_recompute --output-dir output --tickers RELIANCE.NS
+```
+
+Outputs per ticker:
+- `final.csv` (fully rebuilt from raw_ohlc.json)
+- `trades_summary.csv` (rebuilt)
+- `performance_metrics.json` (rebuilt)
+- `audit_trades.csv`
+- `audit_checks.json`
+- `audit_trailing_violations.csv` (only if violations exist)
+
+Global summary:
+- `output/_summary/audit_overview.csv`
+
+## Sector-based analysis
+
+Run sector index analysis (NSE sector indices via Yahoo Finance):
+```
+python -m src.sector_pipeline --output-dir data/stoploss_output
+```
+
+Outputs per sector (folder name = sector name):
+- `raw_ohlc.json`
+- `final.csv` (with `Sector` column)
+- `trades_summary.csv` (with `Sector` column)
+- `performance_metrics.json` (includes `sector`)
+- `equity_curve.csv` (includes `Sector` and `Ticker`)
+- `equity_curve.png`
 
 ## Airflow usage
 

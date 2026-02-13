@@ -40,8 +40,9 @@ def compute_indicators(df: pd.DataFrame) -> pd.DataFrame:
         close.shift(1) <= result["DonchianHigh20_prev"].shift(1)
     )
     ma_filter = close > result["MA30"]
+    sma_filter = close > result["SMA150"]
     rsi_filter = result["RSI14"] >= 60
-    buy_call = (donch_breakout & ma_filter & rsi_filter).fillna(False)
+    buy_call = (donch_breakout & ma_filter & sma_filter & rsi_filter).fillna(False)
     result["BuyCall"] = buy_call.astype(int)
 
     result["EntryPrice"] = close.where(buy_call)
